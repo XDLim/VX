@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(27, 27, 27);
+}
+
+.logo_empresa{
+    height: 30px;
+    width: 100px;
+    padding: .5rem;
+}
