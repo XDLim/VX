@@ -1,43 +1,292 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma VX</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <title>Consult</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="/imagens/Logo da empresa sem fundo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
-    <header>
-        <div class="ondeficalogodaempresa">
-            <h2>Vx</h2>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-vx">
+                <span>V</span><span>X</span>
+            </div>
+            <span class="logo-text">CONSULT</span>
         </div>
 
-        <div class="ondeficamudarotema">
-            <div class="selecaodeluz">
-                <img src="/imagens/icon luz.png" alt="luz" class="icon_light"> 
-                <h3>Light</h3>
+        <nav class="menu">
+
+            <a href="#" class="menu-item active">
+                <span class="icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">⌕</span>
+                <span>Pesquisas</span>
+                <span class="arrow">⌄</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">♟</span>
+                <span>Meu Perfil</span>
+            </a>
+
+            <a href="#" class="menu-item">
+                <span class="icon">↪</span>
+                <span>Sair</span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div class="theme-buttons">
+                    <button id="lightTheme">☀ Light</button>
+                    <button id="darkTheme" class="selected">☾ Dark</button>
+                    <button id="alienTheme">☢ Alien</button>
             </div>
 
-            <div class="selecaodedark">
-                <img src="/imagens/icone lua.png" alt="lua" class="icon_lua"> 
-                <h3>Dark</h3>
+            <div class="user">
+                <span>Olá, Ciel Lima</span>
+                <div class="avatar">
+                    CL
+                </div>
             </div>
 
-            <div class="selecaodealien">
-                <img src="/imagens/icone alien.png" alt="alien" class="icon_alien"> 
-                <h3>Alien</h3>
+        </header>
+
+
+        <!-- CONTEÚDO -->
+        <section class="content">
+
+            <!-- TÍTULO -->
+            <div class="page-title">
+
+                <button class="back-button">
+                    ‹
+                </button>
+
+                <div>
+                    <h1>
+                        <span class="green-dot"></span>
+                        Pesquisas em Andamento
+                    </h1>
+
+                    <p>Listagem de análises — VX Consult</p>
+                </div>
+
             </div>
-        </div>
 
-        <div class="ondeficafotodeperfil">
-            <h5>Ola, Billie Eilish</h5>
-            <img src="/imagens/Billie Eilish.jpg" alt="fotoperfil" class="foto_perfil">
-        </div>
 
-    </header>
+            <!-- LINHA VERDE -->
+            <div class="green-line"></div>
+
+
+            <!-- CARDS -->
+            <div class="stats">
+
+                <div class="stat-card">
+                    <strong>2</strong>
+                    <span>Total de pesquisas</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>1</strong>
+                    <span>Status distintos</span>
+                </div>
+
+            </div>
+
+
+            <!-- FILTROS -->
+            <div class="filters">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="text"
+                        placeholder="Buscar por ID, CPF ou nome..."
+                    >
+                </div>
+
+                <button class="filter active">
+                    ✓ Todos
+                </button>
+
+                <button class="filter">
+                    Em Análise
+                </button>
+
+                <span class="result-count">
+                    2 de 2 pesquisas
+                </span>
+
+            </div>
+
+
+            <!-- TABELA -->
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID ↕</th>
+                            <th>Motorista ↕</th>
+                            <th>Cliente ↕</th>
+                            <th>Filial ↕</th>
+                            <th>Perfil ↕</th>
+                            <th>Status ↕</th>
+                            <th>Operador ↕</th>
+                            <th>Iniciado</th>
+                            <th>Criado em ↕</th>
+                            <th>Pendente ↕</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <a class="id">#284087 ›</a>
+                            </td>
+
+                            <td>
+                                <div class="driver">
+                                    <strong>ADRIANO UHLIG</strong>
+                                    <small>148.926.137-03</small>
+                                    <span class="tag">APP</span>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span>—</span>
+                            </td>
+
+                            <td>
+                                TRANSPORTE RODOVIARIO 1500 - MOSAIC
+                            </td>
+
+                            <td>
+                                <span class="profile">Autônomo</span>
+                            </td>
+
+                            <td>
+                                <span class="status">Em Análise</span>
+                            </td>
+
+                            <td>
+                                Jacqueline Damacena
+                            </td>
+
+                            <td>
+                                <span class="online"></span>
+                            </td>
+
+                            <td>
+                                13/08/2026, 12:59
+                            </td>
+
+                            <td>
+                                <span class="pending">25min</span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <a class="id">#284085 ›</a>
+                            </td>
+
+                            <td>
+                                <div class="driver">
+                                    <strong>VALDOMIRO WEGNER</strong>
+                                    <small>702.243.070-53</small>
+                                </div>
+                            </td>
+
+                            <td>
+                                <span>—</span>
+                            </td>
+
+                            <td>
+                                TRANSBEN TRANSPORTES LTDA
+                            </td>
+
+                            <td>
+                                <span class="profile">Autônomo</span>
+                            </td>
+
+                            <td>
+                                <span class="status">Em Análise</span>
+                            </td>
+
+                            <td>
+                                Rafaela Cunha
+                            </td>
+
+                            <td>
+                                <span class="online"></span>
+                            </td>
+
+                            <td>
+                                13/08/2026, 12:56
+                            </td>
+
+                            <td>
+                                <span class="pending">28min</span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- BOTÃO DE ATUALIZAR -->
+    <div class="update-area">
+
+        <span>
+            ✳ Atualiza em <strong>4:54</strong>
+        </span>
+
+        <button>
+            ⟳ Atualizar
+        </button>
+
+    </div>
+
+    <script src="java.js"></script>
 
 </body>
+
 </html>
